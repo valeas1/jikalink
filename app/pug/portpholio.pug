@@ -1,0 +1,89 @@
+extends blocks/layout
+block titleSite
+    title Portpholio
+block site
+    include blocks/_header.pug
+    h1(class="visually-hidden") Potpholio
+    .port-wrap
+        section(class="port conteiner")
+            h2(class="visually-hidden") Works
+            .port__nav
+                button(class="port__nav-btn port__nav-btn--active") Все
+                button(class="port__nav-btn") Веб-сайты
+                button(class="port__nav-btn") Приложения
+                button(class="port__nav-btn") Дизайн
+                button(class="port__nav-btn") Маркетинг
+            .port__tabs
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-01.jpg" srcset="img/port-img-01@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Технокряк
+                        p(class="port__tabs-card-text") Веб-сайт
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-02.jpg" srcset="img/port-img-02@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Постер New Orlean vs Golden Star
+                        p(class="port__tabs-card-text") Дизайн
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-03.jpg" srcset="img/port-img-03@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Ресторан Seafood
+                        p(class="port__tabs-card-text") Приложение
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-04.jpg" srcset="img/port-img-04@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Проект Prime
+                        p(class="port__tabs-card-text") Маркетинг
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-05.jpg" srcset="img/port-img-05@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Проект Boxes
+                        p(class="port__tabs-card-text") Приложение
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-06.jpg" srcset="img/port-img-06@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Inspiration has no Borders
+                        p(class="port__tabs-card-text") Веб-сайт
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-07.jpg" srcset="img/port-img-07@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Издание Limited Edition
+                        p(class="port__tabs-card-text") Дизайн
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-08.jpg" srcset="img/port-img-08@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Проект LAB
+                        p(class="port__tabs-card-text") Маркетинг
+                a(href="#") 
+                    article(class="port__tabs-card")
+                        .port__tabs-card-wrap
+                            img(class="port__tabs-card-img" src="img/port-img-09.jpg" srcset="img/port-img-09@2x.jpg" 2x, alt="")
+                            p(class="port__tabs-card-disc").
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                        h3(class="port__tabs-card-title") Growing Business
+                        p(class="port__tabs-card-text") Приложение
+    include blocks/_footer.pug

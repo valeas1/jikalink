@@ -1,0 +1,53 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 30px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        &-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            &:hover {
+                border: 1px solid #2196F3;
+            }
+            &:hover path {
+                fill: #2196F3;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .clients {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .clients {
+        padding-top: 92px;
+        padding-bottom: 94px;
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 50px;
+        }
+        &__grid {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}

@@ -1,0 +1,206 @@
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1000;
+    &.is-hidden {
+        display: none;
+    }
+    &__main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 450px;
+        height: 609px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 40px;
+        &-cross {
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: inline-flex;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            padding: 7px;
+            &:hover path {
+                fill: #2196F3;;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
+            margin-bottom: 12px;
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            &-lable {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.01em;
+                color: #757575;
+                margin-bottom: 10px;
+            }
+            &-input {
+                display: inline-flex;
+                order: 1;
+                width: 100%;
+                height: 40px;
+                padding-left: 42px;
+                margin-top: 4px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+                background-repeat: no-repeat;
+                background-position: 15px center;
+                outline: none;
+                &:focus + span {
+                    color: #2196F3;
+                }
+                &--01 {
+                    background-image: url('../img/form-name-pic.svg');
+                    &:focus {
+                        background-image: url('../img/form-name-pic-active.svg');
+                        border: 1px solid #2196F3;
+                    }
+                }
+                &--02 {
+                    background-image: url('../img/form-phone-pic.svg');
+                    &:focus {
+                        background-image: url('../img/form-phone-pic-active.svg');
+                        border: 1px solid #2196F3;
+                    }
+                }
+                &--03 {
+                    background-image: url('../img/form-mail-pic.svg');
+                    &:focus {
+                        background-image: url('../img/form-mail-pic-active.svg');
+                        border: 1px solid #2196F3;
+                    }
+                }
+            }
+            &-textarea {
+                font-family: 'Roboto', 'Arial',sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.03em;
+                color: black;
+                order: 1;
+                width: 100%;
+                height: 120px;
+                resize: none;
+                margin-top: 4px;
+                padding: 12px 16px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+                outline: none;
+                &:focus {
+                    border: 1px solid #2196F3;
+                }
+                &:focus + span {
+                    color: #2196F3;
+                }
+                &::placeholder {
+                    font-family: 'Roboto', 'Arial', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.01em;
+                    color: rgba(117, 117, 117, 0.5);
+                }
+            }
+            &-check{
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 31px;
+                &box:checked + span{
+                    border: 2px solid #2196F3;
+                    background: #2196F3;
+                }
+                &box:checked + span::before {
+                    display: inline-flex;
+                } 
+                &-span {
+                    display: inline-flex;
+                    position: relative;
+                    width: 16px;
+                    height: 15px;
+                    border: 2px solid #212121;
+                    border-radius: 2px;
+                    margin-right: 5px;
+                    &::before {
+                        content: url('../img/form-check.svg');
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &-text {
+                        position: relative;
+                        top: -2px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 0.03em;
+                        color: #757575;
+                    }
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.03em;
+                    text-decoration-line: underline;
+                    color: #2196F3;
+                }
+            }
+            &-btn {
+                align-self: center;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal {
+        &__main {
+            width: 528px;
+            height: 581px;
+            &-title {
+                line-height: 23px;
+            }
+            &-form {
+                &-check {
+                    &-span {
+                        &-text {
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
